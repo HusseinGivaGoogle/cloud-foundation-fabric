@@ -20,7 +20,7 @@ locals {
 
 provider "github" {
   base_url = var.github.url
-  owner    = local.github_groups[0]
+  owner    = length(local.github_groups) > 0 ? local.github_groups[0] : null
 }
 
 data "github_organization" "organization" {

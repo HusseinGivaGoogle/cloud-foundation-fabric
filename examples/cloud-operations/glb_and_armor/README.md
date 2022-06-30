@@ -70,7 +70,7 @@ Note: To grant a user a role, take a look at the [Granting and Revoking Access](
 
 Click on the button below, sign in if required and when the prompt appears, click on “confirm”.
 
-[![shell_button](shell_button.png)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2FGoogleCloudPlatform%2Fcloud-foundation-fabric&cloudshell_git_branch=master&cloudshell_workspace=examples%2Fcloud-operations%2Fglb_and_armor)
+[<img src="shell_button.png" width="250">](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2FGoogleCloudPlatform%2Fcloud-foundation-fabric&cloudshell_git_branch=master&cloudshell_workspace=examples%2Fcloud-operations%2Fglb_and_armor)
 
 This will clone the repository to your cloud shell and a screen like this one will appear:
 
@@ -93,9 +93,9 @@ Before we deploy the architecture, you will need the following information:
 
        cloudshell_open/cloud-foundation-fabric/examples/cloud-operations/glb_and_armor
 
-3.Run the following command to initialize the terraform working directory:
+3. Run the following command to initialize the terraform working directory:
 
-      terraform init
+       terraform init
 
 4. Copy the following command into a console and replace __[my-project-id]__ with your project’s ID. Then run the following command to run the terraform script and create all relevant resources for this architecture:
 

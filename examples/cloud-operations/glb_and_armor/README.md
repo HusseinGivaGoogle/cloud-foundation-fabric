@@ -25,7 +25,7 @@ This architecture caters to multiple workloads ranging from the ones requiring c
 
 ## Architecture
 
-![Architecture](architecture.png)
+<img src="architecture.png" width="500">
 
 The main components that we would be setting up are (to learn more about these products, click on the hyperlinks):
 

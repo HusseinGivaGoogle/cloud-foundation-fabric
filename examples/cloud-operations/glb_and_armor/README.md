@@ -132,3 +132,23 @@ The easiest way to remove all the deployed resources is to run the following com
         terraform destroy
 
 The above command will delete the associated resources so there will be no billable charges made afterwards. 
+
+<!-- BEGIN TFDOC -->
+
+## Variables
+
+| name | description | type | required | default |
+|---|---|:---:|:---:|:---:|
+| [project_id](variables.tf#L26) | Identifier of the project. | <code>string</code> | ✓ |  |
+| [enforce_security_policy](variables.tf#L31) | Enforce security policy. | <code>bool</code> |  | <code>true</code> |
+| [prefix](variables.tf#L37) | Prefix used for created resources. | <code>string</code> |  | <code>null</code> |
+| [project_create](variables.tf#L17) | Parameters for the creation of the new project. | <code title="object&#40;&#123;&#10;  billing_account_id &#61; string&#10;  parent             &#61; string&#10;&#125;&#41;">object&#40;&#123;&#8230;&#125;&#41;</code> |  | <code>null</code> |
+
+## Outputs
+
+| name | description | sensitive |
+|---|---|:---:|
+| [glb_ip_address](outputs.tf#L18) | Load balancer IP address. |  |
+| [vm_siege_external_ip](outputs.tf#L23) | Siege VM external IP address. |  |
+
+<!-- END TFDOC -->

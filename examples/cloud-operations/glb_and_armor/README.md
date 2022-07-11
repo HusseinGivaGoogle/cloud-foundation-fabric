@@ -46,8 +46,6 @@ Pricing Estimates - We have created a sample estimate based on some usage we see
 
 https://cloud.google.com/products/calculator/#id=3105bbf2-4ee0-4289-978e-9ab6855d37ed
 
-<img src="table_cost.png" width="500">
-
 ## Setup
 
 This solution assumes you already have a project created and set up where you wish to host these resources. If not, and you would like for the project to create a new project as well,  please refer to the [github repository](https://github.com/GoogleCloudPlatform/cloud-foundation-fabric/tree/master/examples/data-solutions/gcs-to-bq-with-least-privileges) for instructions.

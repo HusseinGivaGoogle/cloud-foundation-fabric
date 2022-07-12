@@ -1,12 +1,12 @@
-# Spinning up a foundation data pipeline on GCP using Cloud Storage, Dataflow and BigQuery
+# Spinning up a foundation data pipeline on Google Cloud using Cloud Storage, Dataflow and BigQuery
 
 ## Introduction
 
 It’s incredible what you can achieve with your businesses when you’re making informed decisions and not speculating. But before the advent of BigData and Cloud, this was a major challenge! Even though companies had petabytes of data about user activity stored away in silos, there were very limited ways to convert this data into actionable insights.
 
-But that’s changed now - and with ETL data pipelines on GCP it is easier than ever to process existing data or set up pipelines to process streaming data and drive it into a data warehouse (like BigQuery) for richer analytics. But this brings up the question, how can a business use this? Consider an e-commerce platform that logs all user activity and clicks into a database for record-keeping purposes but hasn’t really been able to pool this invaluable data to modify the visitor’s experience. With a proper ETL pipeline, the business can stream this data to get insight into user usage patterns, modify product suggestions for individual users (by embedding a bit of ML via BigQuery ML) or even plan stocking requirements based on demand from a certain user type at a certain time of the year. The possibilities are endless!
+But that’s changed now - and with ETL data pipelines on Google Cloud it is easier than ever to process existing data or set up pipelines to process streaming data and drive it into a data warehouse (like BigQuery) for richer analytics. But this brings up the question, how can a business use this? Consider an e-commerce platform that logs all user activity and clicks into a database for record-keeping purposes but hasn’t really been able to pool this invaluable data to modify the visitor’s experience. With a proper ETL pipeline, the business can stream this data to get insight into user usage patterns, modify product suggestions for individual users (by embedding a bit of ML via BigQuery ML) or even plan stocking requirements based on demand from a certain user type at a certain time of the year. The possibilities are endless!
 
-Do you think your business could use an ETL pipeline to activate your data records? Let’s discuss how to implement a foundation data pipeline on GCP.
+Do you think your business could use an ETL pipeline to activate your data records? Let’s discuss how to implement a foundation data pipeline on Google Cloud.
 
 An ETL pipeline is defined by three simple steps: 
 
@@ -18,7 +18,7 @@ You can learn more about cloud-based ETL [here](https://cloud.google.com/learn/w
 
 ## Use cases
 
-Whether you’re transferring from another Cloud Service Provider or you’re taking your first steps into the cloud with GCP, building a data pipeline sets a good foundation to begin deriving insights for your business.
+Whether you’re transferring from another Cloud Service Provider or you’re taking your first steps into the cloud with Google Cloud, building a data pipeline sets a good foundation to begin deriving insights for your business.
 * __Anomaly Detection__: building data pipelines to identify cyber security threats or fraudulent transactions using machine learning (ML) models.
 * __Interactive Data Analysis__: carry out interactive data analysis with BigQuery BI Engine that enables you to analyze large and complex datasets interactively with sub-second query response time and high concurrency.
 * __Predictive Forecasting__: building solid pipelines to capture real-time data for ML modeling and using it as a forecasting engine for situations ranging from weather predictions to market forecasting.
@@ -198,7 +198,7 @@ The above command will delete the associated resources so there will be no billa
 |---|---|:---:|:---:|:---:|
 | [prefix](variables.tf#L36) | Unique prefix used for resource names. Not used for project if 'project_create' is null. | <code>string</code> | ✓ |  |
 | [project_id](variables.tf#L50) | Project id, references existing project if `project_create` is null. | <code>string</code> | ✓ |  |
-| [cmek_encryption](variables.tf#L15) | Flag to enable CMEK on GCP resources created. | <code>bool</code> |  | <code>false</code> |
+| [cmek_encryption](variables.tf#L15) | Flag to enable CMEK on Google Cloud resources created. | <code>bool</code> |  | <code>false</code> |
 | [data_eng_principals](variables.tf#L21) | Groups with Service Account Token creator role on service accounts in IAM format, eg 'group:group@domain.com'. | <code>list&#40;string&#41;</code> |  | <code>&#91;&#93;</code> |
 | [network_config](variables.tf#L27) | Shared VPC network configurations to use. If null networks will be created in projects with preconfigured values. | <code title="object&#40;&#123;&#10;  host_project     &#61; string&#10;  subnet_self_link &#61; string&#10;&#125;&#41;">object&#40;&#123;&#8230;&#125;&#41;</code> |  | <code>null</code> |
 | [project_create](variables.tf#L41) | Provide values if project creation is needed, uses existing project if null. Parent is in 'folders/nnn' or 'organizations/nnn' format. | <code title="object&#40;&#123;&#10;  billing_account_id &#61; string&#10;  parent             &#61; string&#10;&#125;&#41;">object&#40;&#123;&#8230;&#125;&#41;</code> |  | <code>null</code> |

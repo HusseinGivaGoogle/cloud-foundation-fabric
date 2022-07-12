@@ -107,7 +107,7 @@ __Congratulations__! You have successfully deployed an HTTP Load Balancer with t
 
 1. Connect to the siege VM using SSH (from Cloud Console or CLI) and run the following command:
 
-        siege -c 250 -t150s http://$LB_IP`ß
+        siege -c 250 -t150s http://$LB_IP
         
 2. In the Cloud Console, on the Navigation menu, click __Network Services > Load balancing__.
 3. Click __Backends__, then click __http-backend__ and navigate to __http-lb__

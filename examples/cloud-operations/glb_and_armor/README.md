@@ -68,7 +68,7 @@ Note: To grant a user a role, take a look at the [Granting and Revoking Access](
 
 Click on the button below, sign in if required and when the prompt appears, click on “confirm”.
 
-[<img src="shell_button.png" width="250">](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2FGoogleCloudPlatform%2Fcloud-foundation-fabric&cloudshell_git_branch=master&cloudshell_workspace=examples%2Fcloud-operations%2Fglb_and_armor)
+[<img src="shell_button.png" width="250">](https://goo.gle/GoCloudArmor)
 
 This will clone the repository to your cloud shell and a screen like this one will appear:
 

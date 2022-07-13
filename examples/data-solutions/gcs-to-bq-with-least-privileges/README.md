@@ -64,7 +64,7 @@ __Step 1: Cloning the repository__
 
 Click on the button below, sign in if required and when the prompt appears, click on “confirm”.
 
-[<img src="shell_button.png" width="250">](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2FGoogleCloudPlatform%2Fcloud-foundation-fabric&cloudshell_git_branch=master&cloudshell_open_in_editor=terraform.tfvars.sample&cloudshell_workspace=examples%2Fdata-solutions%2Fgcs-to-bq-with-least-privileges)
+[<img src="shell_button.png" width="250">](https://goo.gle/GoDataPipe)
 
 This will clone the repository to your cloud shell and a screen like this one will appear:
 
